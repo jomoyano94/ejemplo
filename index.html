@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jonathan Moyano Producciones</title>
+    <link rel="stylesheet" href="css/primer_estilo.css"/>
+
 </head>
 <body>
     
@@ -19,7 +22,7 @@
                 <li><a href="index2.html" >Cerbeza</a></li>
                 <li><a href="direccion" >Whisky</a></li>
                 <li><a href="direccion" >Aguerdiente</a></li>
-                <li><a href="direccion" >Tequila</a></li>
+                <li><a href="index3.html" >Tequila</a></li>
                 <li><a href="direccion" >Ron</a></li>
                     
             </ul>
@@ -28,13 +31,44 @@
     <main>
         <h1>FORMULARIO DE PRUEBA</h1> 
         <form>
-            <label>Nombre</label><br />
-            <input type="text" name="txtNombre"></input> <br />
+            <label for="nombre">Nombre</label><br />
+            <input type="text" id="nombre" name="txtNombre"></input> <br />
             <label>Correo electrinico</label><br />
             <input type="email" name="txtCorreo"></input><br />
             <label>Telefono</label><br />
-            <input type="number" name="Telefono"></input> <br/>
+            <input type="tel" name="Telefono" min= "9999999" max="9999999999"> </input> <br/>
+            <label>Ingresar Fecha</label><br/>
+            <input type="date" name="txtFecha"></input> <br/>   
+            <label>Ingresar Vehiculo</label><br/>
+            <select name="seleccionar">
+
+                <option value="1">Whisky</option>        
+                <option value=2>Cerveza</option>
+                <option value=3>Aguardiente</option>
+                <option value=4>Tequila</option>
+
+            </select> <br />
             <input type="submit" value="Guardar">
+            <br /><br />
+            <center>
+            <TAble border="1">
+                <tr>
+                <th></th>
+                <Th>Nombre</Th>
+                <th>Apellido</th>
+                <th>Telefono</th>
+            </tr>
+            <tr>
+                <th>Informacion</th>
+                <td>Jonatan estiven</td>
+                <td>moyano vasquez</td>
+                <td>3102801201</td>
+
+            </tr>
+            </TAble>
+        </center>
+
+                
 
         </form>
 
